@@ -156,7 +156,7 @@ nthElementAsync(infiniteStream, 100000, function (value) {
 nthElementBatched(infiniteStream, 100000, function (value) {
   print('nthElementBatched(infiniteStream, 100000):', value);
 });
-*/
+
 var primes = sieve(integersFrom(2));
 
 foreachStream(primes, function (value) {
