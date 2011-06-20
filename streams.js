@@ -112,7 +112,7 @@ function foreachStream(str, callback) {
     setTimeout(function () {
       callback(carStream(str));
       foreachStream(cdrStream(str), callback);
-    }, 100);
+    }, 0);
   }
 }
 
@@ -157,6 +157,7 @@ nthElementBatched(infiniteStream, 100000, function (value) {
   print('nthElementBatched(infiniteStream, 100000):', value);
 });
 
+*/
 var primes = sieve(integersFrom(2));
 
 foreachStream(primes, function (value) {
